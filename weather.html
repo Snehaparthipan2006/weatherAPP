@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Weather Intelligence</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="wheather.mp4" ty\pe="video/mp4">
+  </video>
+
+  <!-- App Content -->
+  <div class="content">
+    <h1>Global Weather Intelligence</h1>
+    <p>Accurate forecasts for any location worldwide</p>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button id="searchBtn" class="btn btn-primary"><i class="bi bi-search"></i></button>
+    </div>
+
+    <div id="weatherResult" class="weather-card mt-3 d-none">
+      <img id="icon" class="weather-icon" alt="">
+      <p class="city_name" id="cityName"></p>
+      <div class="temp" id="temp"></div>
+      <div id="description"></div>
+      <div id="details" class="mt-2 small"></div>
+    </div>
+    <!-- <a href="todolist.html" class="btn btn-primary" style="margin-top: 
+    20px;">Go to TO-DO-LIST</a> -->
+
+    <p class="mt-5 small">Data provided by OpenWeatherMap • 2025 Weather Prediction System</p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
